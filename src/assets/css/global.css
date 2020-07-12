@@ -8,4 +8,25 @@ body,
     height: 100%;
     margin: 0;
     padding: 0;
+    min-width: 1200px;
+}
+
+/* Users中面包屑区域设置 */
+.el-breadcrumb{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+/* Users中卡片区域设置 */
+.el-card{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Users中用户列表区域设置 */
+.el-table{
+    margin-top: 15px;
+}
+
+.el-cascader-menu{
+    height: 300px;
 }

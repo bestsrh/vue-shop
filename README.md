@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vue电商
 
 
@@ -68,3 +69,30 @@ PC后台管理端的功能：管理用户账号（登录，退出，用户管理
 ###### 3.使用token原理分析
 
 ![image-20200513134535828](C:\Users\史荣辉\AppData\Roaming\Typora\typora-user-images\image-20200513134535828.png)
+=======
+# vue_shop
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+ 
+>>>>>>> rights
