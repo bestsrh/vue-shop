@@ -40,16 +40,19 @@ Vue.component('tree-table', TreeTable)
 Vue.use(VueQuillEditor)
 
 // 对时间的过滤器
-Vue.filter('dateFormat', function (originVal) {
-  const dt = new Date(originVal)
+Vue.filter('dateFormat', function (time) {
+  const dt = new Date(time)
 
-  const y = dt.getFullYear()
-  const m = (dt.getMonth() + 1 + '').padStart(2, '0')
-  const d = (dt.getDate() + '').padStart(2, '0')
-
-  const hh = (dt.getHours() + '').padStart(2, '0')
-  const mm = (dt.getMinutes() + '').padStart(2, '0')
-  const ss = (dt.getSeconds() +'').padStart(2, '0')
+  const date = new Date(time)
+    const dateNumFun = (num) => num < 10 ? `0${num}` : num 
+    const [y, m, d, hh, mm, ss] = [    // es6 解构赋值
+            date.getFullYear(),
+            dateNumFun(date.getMonth() + 1),
+            dateNumFun(date.getDate()),
+            dateNumFun(date.getHours()),
+            dateNumFun(date.getMinutes()),
+            dateNumFun(date.getSeconds())
+        ]
 
   return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
   
